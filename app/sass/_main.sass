@@ -1,6 +1,6 @@
 .main
   height: calc( 100vh - 72px )
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/main.jpg')
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/mainNew.jpg')
   background-repeat: no-repeat
   background-size: cover
   background-position: center center
@@ -8,10 +8,13 @@
     height: 100%
     display: flex
     align-items: center
-    justify-content: center
+    justify-content: flex-end
     position: relative
+    flex-direction: column
+    padding-bottom: 62px
   &__title
-    width: 1024px
+    width: 100%
+    max-width: 1024px
     margin-left: auto
     margin-right: auto
     text-align: center
@@ -21,10 +24,8 @@
     font-size: 54px
     color: white
     line-height: 64px
-    margin-bottom: 45px
+    margin-bottom: 30px
   &__footer
-    position: absolute
-    bottom: 90px
     width: 100%
     display: flex
     flex-direction: column
@@ -115,7 +116,7 @@
 
 .slider
   height: 90vh
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/main.jpg')
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/slider-bg.jpeg')
   background-repeat: no-repeat
   background-size: cover
   background-position: center center
@@ -133,6 +134,7 @@
         font-size: 46px
         text-align: center
         font-family: '600'
+        text-transform: uppercase
         color: white
         width: 600px
         line-height: 55px
