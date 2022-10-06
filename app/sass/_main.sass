@@ -1,0 +1,436 @@
+.main
+  height: calc( 100vh - 72px )
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/main.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  &__inner
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+  &__title
+    width: 1024px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    display: block
+    font-family: '600'
+    text-transform: uppercase
+    font-size: 54px
+    color: white
+    line-height: 64px
+    margin-bottom: 45px
+  &__footer
+    position: absolute
+    bottom: 90px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    span
+      display: block
+      font-family: '500'
+      font-size: 20px
+      color: white
+    img
+      width: 170px
+      margin-top: 5px
+
+.second-section
+  &__inner
+    padding: 220px 0
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    img
+      width: 208px
+      object-fit: contain
+      margin: 0 10px
+    div
+      &:first-child
+        width: 460px
+      &:last-child
+        width: 480px
+        font-family: '400'
+        color: #7E7E7E
+        font-size: 18px
+        line-height: 24px
+
+.statistics
+  background: #F9F9F9
+  &__inner
+    padding: 132px 0 140px 0
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    border-bottom: 1px solid #DADADA
+    padding-bottom: 20px
+    .title
+      width: 100%
+      max-width: 700px
+    .link
+      color: #7E7E7E
+      cursor: pointer
+      font-size: 17px
+      font-family: '500'
+      display: flex
+      align-items: center
+      img
+        margin-left: 13px
+  &__cards
+    margin-top: 60px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: -3.5%
+  &__card
+    background: #FFFFFF
+    border-radius: 10px
+    padding: 50px
+    width: 31%
+    margin-bottom: 3.5%
+    overflow: hidden
+    div
+      &:first-child
+        color: #5DA0EF
+        font-family: '400'
+        font-size: 56px
+        line-height: 68px
+        white-space: nowrap
+      &:nth-child(2)
+        margin-top: 15px
+        text-transform: uppercase
+        font-family: '600'
+        font-size: 17px
+        line-height: 22px
+      &:last-child
+        margin-top: 20px
+        color: #A9A9A9
+        font-family: 500
+        font-size: 17px
+        line-height: 22px
+
+.slider
+  height: 90vh
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/main.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  &__slide
+    width: 100%
+    height: 100%
+    &:first-child
+      background: transparent !important
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      .text
+        font-size: 46px
+        text-align: center
+        font-family: '600'
+        color: white
+        width: 600px
+        line-height: 55px
+
+.programs
+  &__inner
+    padding: 130px 0
+  &__header
+    border-bottom: 1px solid #DADADA
+    padding-bottom: 10px
+  &__cards
+    margin-top: 65px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: -3%
+  &__card
+    width: 23%
+    background: #F9F9F9
+    border-radius: 10px
+    padding: 35px
+    margin-bottom: 3%
+    position: relative
+    &-title
+      display: flex
+      align-items: center
+      font-family: '600'
+      font-size: 26px
+      line-height: 27px
+      img
+        display: block
+        margin-right: 14px
+    &-descr
+      margin-top: 17px
+      color: #7E7E7E
+      font-size: 17px
+      font-family: '500'
+      line-height: 21px
+      padding-bottom: 60px
+    &-arrow
+      position: absolute
+      right: 10px
+      bottom: 10px
+      cursor: pointer
+    &:last-child
+      background: #DFF3FF
+      height: max-content
+      .form
+        span
+          color: #161616
+          font-family: '500'
+          font-size: 19px
+          line-height: 24px
+          text-transform: uppercase
+        .button
+          margin-top: 30px
+
+.quote
+  background: #F9F9F9
+  &__inner
+    padding: 130px 0
+    display: flex
+    justify-content: space-between
+    .title
+      width: 100%
+      max-width: 550px
+  &__wrap
+    max-width: 554px
+    width: 100%
+    img
+      width: 100%
+      height: 260px
+      object-fit: contain
+  &__text
+    margin-top: 45px
+    p
+      margin-bottom: 0
+      font-size: 18px
+      font-family: '500'
+      line-height: 24px
+      color: #7E7E7E
+      & + p
+        margin-top: 15px
+
+.request
+  background: #F9F9F9
+  &__inner
+    padding: 170px 0
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    div
+      &:first-child
+        width: 29%
+      &:last-child
+        width: 30%
+        color: #7E7E7E
+        font-size: 17px
+        line-height: 24px
+        font-family: '500'
+        .button
+          margin-top: 50px
+    img
+      width: 32%
+      margin-right: 2%
+      object-fit: contain
+
+.news
+  &__inner
+    padding: 130px 0
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    border-bottom: 1px solid #DADADA
+    padding-bottom: 14px
+    .title
+      width: 100%
+      max-width: 700px
+    .link
+      color: #7E7E7E
+      cursor: pointer
+      font-size: 17px
+      font-family: '500'
+      display: flex
+      align-items: center
+      img
+        margin-left: 13px
+  &__content
+    display: flex
+    justify-content: space-between
+    margin-top: 65px
+  &__cards
+    width: 650px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__card
+    width: 300px
+    cursor: pointer
+    margin-bottom: 50px
+    &-img
+      img
+        width: 100%
+        height: 200px
+        object-fit: contain
+        border-radius: 4px
+    &-date
+      font-size: 14px
+      font-family: '500'
+      color: #6F6F6F
+      margin-top: 20px
+    &-title
+      margin-top: 20px
+      font-size: 16px
+      font-family: '500'
+      color: #161616
+      overflow: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
+  &__scrollNews
+    width: 570px
+    max-height: 660px
+    background: #F9F9F9
+    border-radius: 5px
+    padding: 35px 25px 35px 35px
+  &__items
+    height: 100%
+    overflow-y: scroll
+    padding-right: 30px
+    &::-webkit-scrollbar
+      width: 3px
+    &::-webkit-scrollbar-track
+      background-color: #EDEDED
+      border-radius: 0
+    &::-webkit-scrollbar-thumb
+      background-color: #A9A9A9
+      border-radius: 0
+  &__item
+    &-title
+      color: #161616
+      font-family: '500'
+      font-size: 18px
+      line-height: 22px
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 10px
+      span
+        color: #A9A9A9
+        font-size: 15px
+        font-family: '500'
+      img
+        width: 30px
+        height: 30px
+        object-fit: contain
+        cursor: pointer
+    & + .news__item
+      border-top: 1px solid #DADADA
+      padding-top: 22px
+      margin-top: 16px
+
+@media (max-width: 767px)
+  .main
+    height: calc(100vh - 65px)
+    &__title
+      font-size: 33px
+      line-height: 46px
+    &__footer
+      bottom: 40px
+      span
+        font-size: 18px
+      img
+        width: 145px
+        margin-top: 10px
+
+  .second-section
+    &__inner
+      flex-direction: column
+      padding: 90px 0
+      div
+        &:first-child
+          width: 100%
+        &:last-child
+          width: 100%
+      img
+        width: 86%
+        margin: 30px 7%
+
+  .statistics
+    &__inner
+      padding: 80px 0
+    &__header
+      flex-direction: column
+      .link
+        margin-top: 30px
+    &__cards
+      flex-direction: column
+    &__card
+      width: 100%
+      margin-bottom: 20px
+      padding: 30px
+      div
+        &:first-child
+          font-size: 44px
+
+  .programs
+    &__inner
+      padding: 80px 0
+    &__cards
+      flex-direction: column
+    &__card
+      width: 100%
+      margin-bottom: 20px
+
+  .slider
+    display: none
+
+  .quote
+    &__inner
+      padding: 80px 0
+      flex-direction: column
+    &__text
+      margin-top: 20px
+
+  .request
+    &__inner
+      padding: 80px 0
+      flex-direction: column
+      div
+        &:first-child
+          width: 100%
+        &:last-child
+          width: 100%
+      img
+        width: 100%
+        margin: 30px 0
+
+  .news
+    &__inner
+      padding: 80px 0
+    &__header
+      flex-direction: column
+      .link
+        margin-top: 30px
+    &__content
+      flex-direction: column
+    &__cards
+      width: 100%
+    &__card
+      width: 100%
+      &-img
+        img
+          height: auto
+    &__scrollNews
+      width: 100%
+      overflow: hidden
+    &__items
+      max-height: 500px
