@@ -40,24 +40,28 @@
       margin-top: 5px
 
 .second-section
+  background: #EFF6FD
   &__inner
-    padding: 220px 0
+    padding: 210px 0
     display: flex
     justify-content: space-between
     align-items: flex-end
     img
-      width: 208px
+      width: 200px
       object-fit: contain
       margin: 0 10px
-    div
-      &:first-child
-        width: 460px
-      &:last-child
-        width: 480px
-        font-family: '400'
-        color: #7E7E7E
-        font-size: 18px
-        line-height: 24px
+    .text-1
+      width: 430px
+      color: #39679D
+      font-family: '600'
+      font-size: 30px
+      line-height: 35px
+    .text-2
+      width: 480px
+      font-family: '500'
+      color: #4B83C6
+      font-size: 18px
+      line-height: 24px
 
 .statistics
   background: #F9F9F9
@@ -65,22 +69,17 @@
     padding: 132px 0 140px 0
   &__header
     display: flex
-    justify-content: space-between
-    align-items: flex-end
+    align-items: center
     border-bottom: 1px solid #DADADA
-    padding-bottom: 20px
-    .title
-      width: 100%
-      max-width: 700px
-    .link
+    padding-bottom: 35px
+    .subtitle
+      margin-left: 70px
       color: #7E7E7E
-      cursor: pointer
-      font-size: 17px
+      max-width: 850px
+      width: 100%
+      font-size: 20px
+      line-height: 24px
       font-family: '500'
-      display: flex
-      align-items: center
-      img
-        margin-left: 13px
   &__cards
     margin-top: 60px
     display: flex
@@ -193,7 +192,7 @@
           margin-top: 30px
 
 .quote
-  background: #F9F9F9
+  background: #EFF6FD
   &__inner
     padding: 130px 0
     display: flex
@@ -201,6 +200,8 @@
     .title
       width: 100%
       max-width: 550px
+      color: #39679D
+      font-family: '600'
   &__wrap
     max-width: 554px
     width: 100%
@@ -215,12 +216,12 @@
       font-size: 18px
       font-family: '500'
       line-height: 24px
-      color: #7E7E7E
+      color: #4B83C6
       & + p
         margin-top: 15px
 
 .request
-  background: #F9F9F9
+  background: #EFF6FD
   &__inner
     padding: 170px 0
     display: flex
@@ -229,9 +230,10 @@
     div
       &:first-child
         width: 29%
+        color: #39679D
       &:last-child
         width: 30%
-        color: #7E7E7E
+        color: #4B83C6
         font-size: 17px
         line-height: 24px
         font-family: '500'
@@ -356,41 +358,68 @@
   .second-section
     &__inner
       flex-direction: column
-      padding: 90px 0
-      div
-        &:first-child
-          width: 100%
-        &:last-child
-          width: 100%
+      padding: 80px 0
       img
-        width: 86%
-        margin: 30px 7%
+        display: none
+      .text-1
+        font-size: 22px
+        width: 100%
+        line-height: 26px
+      .text-2
+        margin-top: 40px
+        font-size: 16px
+        width: 100%
+        line-height: 20px
 
   .statistics
     &__inner
       padding: 80px 0
     &__header
       flex-direction: column
-      .link
-        margin-top: 30px
+      align-items: flex-start
+      border-bottom: none
+      padding-bottom: 0
+      .title
+        font-size: 22px
+      .subtitle
+        margin-top: 20px
+        margin-left: 0
+        font-size: 16px
     &__cards
-      flex-direction: column
+      margin-top: 50px
     &__card
       width: 100%
-      margin-bottom: 20px
-      padding: 30px
+      margin-bottom: 30px
+      padding: 40px 24px
       div
         &:first-child
-          font-size: 44px
+          font-size: 40px
+        &:nth-child(2)
+          font-size: 16px
+          margin-top: 5px
+        &:last-child
+          font-size: 15px
 
   .programs
     &__inner
       padding: 80px 0
+    &__header
+      border-bottom: none
+      padding-bottom: 0
+      .title
+        text-transform: capitalize
+        font-size: 23px
+        line-height: 28px
     &__cards
       flex-direction: column
     &__card
       width: 100%
       margin-bottom: 20px
+      .form
+        span
+          color: #39679D !important
+          text-transform: capitalize !important
+          font-size: 23px !important
 
   .slider
     display: none
@@ -409,11 +438,12 @@
       div
         &:first-child
           width: 100%
+          text-transform: capitalize
         &:last-child
           width: 100%
       img
         width: 100%
-        margin: 30px 0
+        margin: 75px 0
 
   .news
     &__inner
@@ -421,13 +451,13 @@
     &__header
       flex-direction: column
       .link
-        margin-top: 30px
+        display: none
     &__content
       flex-direction: column
     &__cards
       width: 100%
     &__card
-      width: 100%
+      width: 48%
       &-img
         img
           height: auto
