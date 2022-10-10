@@ -2,6 +2,8 @@
 @import "libs"
 @import "fonts"
 @import "main"
+@import "nakaz"
+@import "fact-checking"
 
 html
     box-sizing: border-box
@@ -21,9 +23,9 @@ h1,h2,h3,h4,h5,h6
     margin: 0
 
 .title
-    font-size: 30px
+    font-size: 40px
     font-family: "600"
-    line-height: 38px
+    line-height: 44px
 
 .button
     background: #5DA0EF
@@ -35,6 +37,12 @@ h1,h2,h3,h4,h5,h6
     color: white
     font-size: 17px
     font-family: '500'
+
+.subtitle
+    color: #7E7E7E
+    font-size: 19px
+    font-family: '500'
+    line-height: 24px
 
 .link-more
     margin: 25px 0
@@ -51,20 +59,22 @@ h1,h2,h3,h4,h5,h6
             margin-left: 13px
 
 .header
+    background: #00A6BD
     &__inner
         display: flex
         justify-content: space-between
         align-items: center
-        padding: 15px 38px
+        padding: 12px 0
         .logo
             img
-                width: 176px
+                width: 65px
     &__wrap
         display: flex
+        align-items: center
         .nav
             display: flex
             a
-                color: #161616
+                color: white
                 text-transform: uppercase
                 font-size: 16px
                 font-family: '500'
@@ -90,31 +100,47 @@ h1,h2,h3,h4,h5,h6
                 & + img
                     margin-left: 30px
         .language
-            display: flex
             margin-left: 60px
-            div
-                opacity: 0.3
-                color: black
-                font-size: 16px
+            position: relative
+            width: 85px
+            z-index: 111111
+            &__this
+                background: #A1E2EB
+                border-radius: 8px
+                width: 100%
+                height: 50px
+                display: flex
+                justify-content: center
+                align-items: center
+                color: #00424C
+                font-size: 17px
                 font-family: '500'
-                text-transform: uppercase
                 cursor: pointer
-                position: relative
-                & + div
-                    margin-left: 16px
-                    &::before
-                        content: '/'
-                        color: black
-                        position: absolute
-                        left: -12px
-            .active
-                opacity: 1 !important
+                padding-left: 5px
+                span
+                    margin-bottom: 2.5px
+                img
+                    margin-left: 10px
+            &__dropdown
+                margin-top: 10px
+                position: absolute
+                width: 100%
+                background: #A1E2EB
+                border-radius: 8px
+                padding: 13px 16px
+                div
+                    cursor: pointer
+                    color: #00424C
+                    font-size: 17px
+                    font-family: '500'
+                    & + div
+                        margin-top: 12px
 
 .header-back
     &__inner
         display: flex
         align-items: center
-        padding: 16px 38px
+        padding: 16px 0
         .back
             cursor: pointer
             display: flex
@@ -128,17 +154,18 @@ h1,h2,h3,h4,h5,h6
                 margin-right: 10px
             &::before
                 content: ''
-                width: 1px
+                width: 2px
                 position: absolute
                 right: 0
-                height: 100%
+                top: 15%
+                height: 70%
                 background: #A9A9A9
 
 .breadcrumb
     display: flex
     align-items: center
     &__item
-        color: #161616
+        color: #A9A9A9
         font-size: 18px
         font-family: '500'
         & + .breadcrumb__item
@@ -164,8 +191,11 @@ h1,h2,h3,h4,h5,h6
             margin-left: 30px
 
 .footer
-    background: #5DA0EF
+    background: #00A6BD
     padding: 110px 0 60px 0
+    .logo
+        img
+            width: 67px
     .row
         & + .row
             border-top: 1px solid #78C1ED
@@ -235,5 +265,51 @@ h1,h2,h3,h4,h5,h6
         font-size: 14px
         font-family: '500'
         line-height: 16px
+
+.text-field
+    .select
+        background: #FFFFFF
+        border: 1px solid #DADADA
+        border-radius: 4px
+        width: 100%
+        height: 52px
+        cursor: pointer
+    .textarea
+        resize: none
+        width: 100%
+        background: #FFFFFF
+        border: 1px solid #DADADA
+        border-radius: 4px
+        padding: 15px 20px
+        height: 185px
+    .checkbox
+        width: 18px !important
+        height: 18px !important
+        border: 1px solid #CEE3FA
+        border-radius: 4px
+        visibility: hidden
+        cursor: pointer
+        position: relative
+        font-size: 17px
+        &:after
+            content: " "
+            background-color: #F5F7F6
+            border: 1px solid #CEE3FA
+            position: absolute
+            border-radius: 4px
+            left: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            top: 0
+            width: 100%
+            height: 100%
+            visibility: visible
+        &:checked:after
+            border: none
+            border-radius: 4px
+            background-color: #00A6BD
+            content: url('../img/checkbox.svg')
+            padding-bottom: 5px
 
 @import "media"

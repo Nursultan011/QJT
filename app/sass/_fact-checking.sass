@@ -1,0 +1,125 @@
+.fact-checking
+  padding-top: 100px
+  padding-bottom: 140px
+  &__header
+    border-bottom: 1px solid #DADADA
+    padding-bottom: 40px
+    .subtitle
+      margin-top: 20px
+  &__tabs
+    margin-top: 50px
+    display: flex
+    flex-wrap: wrap
+    .active
+      background: #5CC8D7 !important
+      color: white !important
+  &__tab
+    background: #E6FCFF
+    border-radius: 4px
+    padding: 12px 20px
+    cursor: pointer
+    color: #00424C
+    font-size: 15px
+    font-family: '500'
+    margin-bottom: 16px
+    & + .fact-checking__tab
+      margin-left: 16px
+  &__content
+    margin-top: 68px
+  &__cards
+    display: flex
+    flex-wrap: wrap
+  &__card
+    width: 23.5%
+    margin-right: 2%
+    background: #F9F9F9
+    border-radius: 10px
+    padding: 20px
+    min-height: 237px
+    margin-bottom: 2%
+    &:nth-child(4n+4)
+      margin-right: 0
+    &-title
+      font-size: 15px
+      font-family: '500'
+      line-height: 19px
+    &-subtitle
+      margin-top: 20px
+      color: #7E7E7E
+      font-size: 14px
+      font-family: '500'
+      overflow: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 4
+      -webkit-box-orient: vertical
+    &-link
+      margin-top: 38px
+      cursor: pointer
+      display: flex
+      margin-right: -8px
+      margin-bottom: -8px
+      justify-content: flex-end
+
+.fact-checking-in
+  &__inner
+    padding-top: 70px
+    padding-bottom: 130px
+  &__content
+    display: flex
+  &__sidebar
+    width: 160px
+    span
+      font-size: 16px
+      font-family: '500'
+      line-height: 20px
+      color: #6F6F6F
+  &__share
+    margin-top: 60px
+    a
+      & + a
+        margin-left: 14px
+    &>div
+      margin-top: 20px
+  &__info
+    margin-left: 100px
+    max-width: 700px
+    width: 100%
+  &__title
+    font-size: 32px
+    font-family: '600'
+    line-height: 35px
+    border-bottom: 1px solid #DADADA
+    padding-bottom: 40px
+  &__descr
+    margin-top: 50px
+    p
+      color: #7E7E7E
+      font-size: 18px
+      font-family: '500'
+      line-height: 21px
+      margin-bottom: 0
+      & + p
+        margin-top: 20px
+
+.featured-fact-checking
+  background: #F9F9F9
+  &__inner
+    padding: 100px 0 120px 0
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #DADADA
+    padding-bottom: 10px
+    .title
+      font-size: 32px
+      line-height: 35px
+    .link
+      color: #A9A9A9 !important
+      cursor: pointer
+      font-size: 16px
+      font-family: '500'
+  .fact-checking__cards
+    margin-top: 60px
+  .fact-checking__card
+    background: #FFFFFF

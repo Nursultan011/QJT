@@ -1,0 +1,124 @@
+.nakaz
+  &__up
+    background-image: url('../img/nakaz-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding: 80px 0 72px 0
+  &__title
+    font-family: '600'
+    font-size: 40px
+    line-height: 44px
+    color: white
+    max-width: 1040px
+    width: 100%
+  &__subtitle
+    margin-top: 20px
+    font-family: '500'
+    font-size: 18px
+    color: white
+  &__textfields
+    margin-top: 50px
+    width: 100%
+    background: white
+    border-radius: 10px
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    align-items: center
+    input,select
+      border: none
+    input
+      height: 70px
+      padding: 30px
+      border-right: 1px solid #DADADA
+      &:first-child
+        width: 30%
+      &:nth-child(2)
+        width: 20%
+    select
+      height: 70px
+      width: 25%
+      & + select
+        border-left: 1px solid #DADADA
+  &__gender
+    margin-top: 20px
+    display: flex
+    align-items: center
+    span
+      font-size: 15px
+      color: white
+      font-family: '500'
+    div
+      margin-left: 30px
+      display: flex
+      align-items: center
+      span
+        margin-left: 10px
+  &__down
+    padding-top: 70px
+    padding-bottom: 120px
+  &__items
+    display: flex
+    flex-wrap: wrap
+  &__item
+    width: 44%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &:first-child
+      margin-right: 6%
+    &:last-child
+      width: 100%
+      border-top: 1px solid #DADADA
+      margin-top: 80px
+      padding-top: 80px
+    &>p
+      font-size: 16px
+      font-family: '500'
+      line-height: 19px
+      margin-bottom: 20px
+    &>span
+      color: #7E7E7E
+      font-size: 15px
+      font-family: '500'
+      margin-top: 10px
+      display: block
+  &__button
+    border: none
+    background: #CFF3F8
+    border-radius: 5px
+    text-transform: uppercase
+    color: #5CC8D7
+    font-size: 17px
+    font-family: '500'
+    width: 347px
+    height: 55px
+    margin-top: 50px
+  &-success
+    padding-top: 120px
+    padding-bottom: 140px
+    p
+      &:first-child
+        color: #161616
+        font-family: '600'
+        font-size: 32px
+        text-align: center
+      &:last-child
+        font-family: '500'
+        font-size: 24px
+        line-height: 28px
+        color: #7E7E7E
+        text-align: center
+
+@media (max-width: 767px)
+  .nakaz
+    &-success
+      padding-top: 80px
+      p
+        &:first-child
+          font-size: 22px
+          text-align: left
+        &:last-child
+          font-size: 20px
+          text-align: left
