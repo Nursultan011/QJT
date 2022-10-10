@@ -1,0 +1,65 @@
+.schedule
+  &__inner
+    display: flex
+    overflow: hidden
+    width: 100%
+    min-height: 100vh
+    .title
+      font-size: 32px
+      line-height: 35px
+  &__sidebar
+    background: #E6FCFF
+    width: 320px
+    padding: 60px 30px 30px 50px
+    height: inherit
+    &-items
+      margin-top: 40px
+      .active
+        background: #A1E2EB !important
+        color: #00424C !important
+    &-item
+      width: 100%
+      color: #5CC8D7
+      border-radius: 8px
+      padding: 16px 24px
+      font-size: 19px
+      font-family: '500'
+      cursor: pointer
+      transition: 0.3s
+      &:hover
+        background: #A1E2EB !important
+        color: #00424C !important
+  &__main
+    width: calc(100% - 320px)
+    padding: 60px
+  &__header
+    width: 100%
+    max-width: 1080px
+    margin-left: auto
+    margin-right: auto
+    border-bottom: 1px solid #DADADA
+    padding-bottom: 40px
+    margin-bottom: 60px
+  &__content
+    width: 100%
+    max-width: 1080px
+    margin-left: auto
+    margin-right: auto
+  &__wrap
+    margin-top: 40px
+    display: flex
+    justify-content: space-between
+    img
+      width: 48.5%
+      object-fit: cover
+      object-position: center
+  &__description
+    width: 48.5%
+    p
+      margin-bottom: 0
+      color: #7E7E7E
+      font-size: 19px
+      line-height: 24px
+      font-family: '500'
+      & + p
+        margin-top: 15px
