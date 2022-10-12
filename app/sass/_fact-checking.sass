@@ -11,28 +11,31 @@
     display: flex
     flex-wrap: wrap
     .active
-      background: #5CC8D7 !important
-      color: white !important
+      background: #FFE72E !important
   &__tab
-    background: #E6FCFF
+    background: #FFFAD5
     border-radius: 4px
     padding: 12px 20px
     cursor: pointer
-    color: #00424C
+    color: #373209
     font-size: 15px
     font-family: '500'
     margin-bottom: 16px
     & + .fact-checking__tab
       margin-left: 16px
   &__content
-    margin-top: 68px
+    margin-top: 60px
+  &__result
+    font-size: 16px
+    font-family: '500'
   &__cards
+    margin-top: 30px
     display: flex
     flex-wrap: wrap
   &__card
     width: 23.5%
     margin-right: 2%
-    background: #F9F9F9
+    border: 1px solid #DADADA
     border-radius: 10px
     padding: 20px
     min-height: 237px
@@ -84,6 +87,10 @@
     margin-left: 100px
     max-width: 700px
     width: 100%
+  &__mobile-date
+    display: none
+  &__mobile-share
+    display: none
   &__title
     font-size: 32px
     font-family: '600'
@@ -123,3 +130,78 @@
     margin-top: 60px
   .fact-checking__card
     background: #FFFFFF
+
+@media (max-width: 767px)
+  .fact-checking
+    padding-top: 80px
+    padding-bottom: 80px
+    // overflow: hidden
+    &__header
+      padding-bottom: 30px
+      .subtitle
+        font-size: 16px
+        line-height: 20px
+    &__tabs
+      margin-top: 30px
+      flex-wrap: nowrap
+      overflow-x: scroll
+      align-items: flex-start
+      &::-webkit-scrollbar
+        width: 0
+    &__tab
+      height: 43px
+      padding: 10px 20px
+      white-space: nowrap
+    &__content
+      margin-top: 30px
+    &__cards
+      margin-top: 30px
+      flex-wrap: wrap
+    &__card
+      margin-right: 0 !important
+      width: 100%
+      margin-bottom: 20px
+      &-subtitle
+        font-size: 14px
+        line-height: 18px
+      &-link
+        margin-top: 28px
+        img
+          width: 24px
+          height: 24px
+
+  .fact-checking-in
+    &__inner
+      padding-top: 80px
+      padding-bottom: 80px
+    &__sidebar
+      display: none
+    &__title
+      font-size: 22px
+      line-height: 24px
+      padding-bottom: 25px
+    &__info
+      margin-left: 0
+      width: 100%
+    &__descr
+      margin-top: 40px
+      p
+        font-size: 16px
+        line-height: 20px
+    &__mobile-date
+      display: block
+      color: #7E7E7E
+      font-size: 16px
+      margin-bottom: 30px
+    &__mobile-share
+      margin-top: 40px
+      display: block
+      span
+        color: #7E7E7E
+        font-size: 16px
+        margin-bottom: 10px
+        display: block
+      div
+        a
+          & + a
+            margin-left: 20px

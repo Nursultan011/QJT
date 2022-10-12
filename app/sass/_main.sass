@@ -1,148 +1,186 @@
 .main
-  height: calc( 100vh - 72px )
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/mainNew.jpg')
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center center
+  background: #E6FCFF
   &__inner
-    height: 100%
+    min-height: calc( 100vh - 74px )
+    padding: 70px 0
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__header
+    border-bottom: 1px solid #A1E2EB
+    padding-bottom: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 30px
+    .title
+      font-size: 26px
+      line-height: 30px
+    .link
+      color: #161616
+      font-size: 16px
+      font-family: '500'
+      display: flex
+      align-items: center
+      img
+        width: 20px
+        height: 20px
+        margin-left: 10px
+  &__slider
+    width: 100%
+    max-width: 770px
+    .main__header
+      margin-right: 15px
+    &-content
+      img
+        width: 100%
+        height: 700px
+        object-fit: cover
+        object-position: center
+  &__news
+    width: 100%
+    max-width: 475px
+    .news__scrollNews
+      background: #FFFFFF
+      border-radius: 5px
+      width: 100%
+      max-height: 700px
+      overflow: hidden
+
+.goals
+  background: #00A6BD
+  overflow: hidden
+  &__inner
+    padding-top: 100px
     display: flex
     align-items: center
-    justify-content: flex-end
-    position: relative
-    flex-direction: column
-    padding-bottom: 62px
-  &__title
+  &__descr
+    max-width: 430px
     width: 100%
-    max-width: 1024px
+    margin-bottom: 100px
+    .title
+      font-size: 40px
+      line-height: 44px
+      color: white
+    .subtitle
+      margin-top: 30px
+      font-size: 17px
+      font-family: '500'
+      color: #CFF3F8
+      line-height: 22px
+    .mobile
+      display: none
+  &__button
+    margin-top: 130px
+    border: none
+    background: #FFF5AB
+    border-radius: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: left
+    padding: 20px 32px
+    width: 100%
+    span
+      color: #695F12
+      font-size: 17px
+      font-family: '600'
+      line-height: 21px
+  &__content
+    margin-left: 80px
+    img
+      width: 720px
+
+.wish
+  background: #E6FCFF
+  &__inner
+    min-height: 80vh
+    padding-top: 60px
+    padding-bottom: 60px
+    display: flex
+    align-items: center
+  &__content
+    max-width: 427px
+    .title
+      font-size: 40px
+      line-height: 44px
+    .link
+      margin-top: 40px
+      color: #00424C
+      font-size: 17px
+      font-family: '500'
+      display: flex
+      align-items: center
+      img
+        margin-left: 10px
+        width: 24px
+        height: 24px
+        cursor: pointer
+  &__button
+    margin-top: 80px
+    background: #5CC8D7 !important
+    width: auto !important
+    padding-left: 30px
+    padding-right: 30px
+    display: flex
+    align-items: center
+    color: white !important
+    img
+      margin-right: 10px
+
+.letter
+  &__inner
+    padding-top: 120px
+    padding-bottom: 100px
+    max-width: 1200px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    background-image: url('../img/letter-bg.png')
+    background-repeat: no-repeat
+    background-size: 100% auto
+    background-position: center center
+    .title
+      max-width: 777px
+      width: 100%
+      font-size: 40px
+      line-height: 44px
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+    .subtitle
+      margin-top: 65px
+      text-align: center
+      font-family: '500'
+      font-size: 20px
+  &__title
+    margin-top: 10px
+    font-size: 64px
+    font-family: '600'
+    text-align: center
+    line-height: 70px
+  &__button
+    border: none
+    display: block
+    margin-top: 40px
     margin-left: auto
     margin-right: auto
     text-align: center
-    display: block
-    font-family: '600'
-    text-transform: uppercase
-    font-size: 54px
-    color: white
-    line-height: 64px
-    margin-bottom: 30px
-  &__footer
-    width: 100%
-    display: flex
-    flex-direction: column
-    align-items: center
-    span
-      display: block
-      font-family: '500'
-      font-size: 20px
-      color: white
-    img
-      width: 170px
-      margin-top: 5px
-
-.second-section
-  background: #EFF6FD
-  &__inner
-    padding: 210px 0
-    display: flex
-    justify-content: space-between
-    align-items: flex-end
-    img
-      width: 200px
-      object-fit: contain
-      margin: 0 10px
-    .text-1
-      width: 430px
-      color: #39679D
-      font-family: '600'
-      font-size: 30px
-      line-height: 35px
-    .text-2
-      width: 480px
-      font-family: '500'
-      color: #4B83C6
-      font-size: 18px
-      line-height: 24px
-
-.statistics
-  background: #F9F9F9
-  &__inner
-    padding: 132px 0 140px 0
-  &__header
-    display: flex
-    align-items: center
-    border-bottom: 1px solid #DADADA
-    padding-bottom: 35px
-    .subtitle
-      margin-left: 70px
-      color: #7E7E7E
-      max-width: 850px
-      width: 100%
-      font-size: 20px
-      line-height: 24px
-      font-family: '500'
-  &__cards
-    margin-top: 60px
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    margin-bottom: -3.5%
-  &__card
-    background: #FFFFFF
+    background: #FFE72E
     border-radius: 10px
-    padding: 50px
-    width: 31%
-    margin-bottom: 3.5%
-    overflow: hidden
-    div
-      &:first-child
-        color: #5DA0EF
-        font-family: '400'
-        font-size: 56px
-        line-height: 68px
-        white-space: nowrap
-      &:nth-child(2)
-        margin-top: 15px
-        font-family: '600'
-        font-size: 17px
-        line-height: 22px
-      &:last-child
-        margin-top: 20px
-        color: #A9A9A9
-        font-family: 500
-        font-size: 17px
-        line-height: 22px
-
-.slider
-  height: 90vh
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../img/slider-bg.jpeg')
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center center
-  &__slide
-    width: 100%
-    height: 100%
-    &:first-child
-      background: transparent !important
-      width: 100%
-      height: 100%
-      display: flex
-      justify-content: center
-      align-items: center
-      .text
-        font-size: 46px
-        text-align: left
-        font-family: '600'
-        text-transform: uppercase
-        color: white
-        width: 600px
-        line-height: 55px
+    padding: 18px 30px
+    font-family: '600'
+    font-size: 22px
 
 .programs
   &__inner
-    padding: 130px 0
+    padding: 130px 0 120px 0
   &__header
-    border-bottom: 1px solid #DADADA
-    padding-bottom: 10px
+    border-bottom: 1px solid #EDEDED
+    padding-bottom: 14px
+    .title
+      font-size: 40px
+      line-height: 44px
   &__cards
     margin-top: 65px
     display: flex
@@ -160,7 +198,7 @@
       display: flex
       align-items: center
       font-family: '600'
-      font-size: 26px
+      font-size: 25px
       line-height: 27px
       img
         display: block
@@ -177,70 +215,28 @@
       right: 10px
       bottom: 10px
       cursor: pointer
+    &:nth-last-child(2)
+      background-color: #5CC8D7
+      background-image: url('../img/programs-pred-last-bfg.png')
+      background-repeat: no-repeat
+      background-position: left bottom
+      background-size: contain
+      *
+        color: white !important
     &:last-child
-      background: #DFF3FF
-      height: max-content
+      background-color: #FFFDEA
+      background-image: url('../img/programs-last-bg.png')
+      background-repeat: no-repeat
+      background-position: center bottom
+      background-size: 100% 74px
       .form
         span
           color: #161616
-          font-family: '500'
-          font-size: 19px
-          line-height: 24px
+          font-family: '600'
+          font-size: 24px
+          line-height: 28px
         .button
           margin-top: 30px
-
-.quote
-  background: #EFF6FD
-  &__inner
-    padding: 130px 0
-    display: flex
-    justify-content: space-between
-    .title
-      width: 100%
-      max-width: 550px
-      color: #39679D
-      font-family: '600'
-  &__wrap
-    max-width: 554px
-    width: 100%
-    img
-      width: 100%
-      height: 260px
-      object-fit: contain
-  &__text
-    margin-top: 45px
-    p
-      margin-bottom: 0
-      font-size: 18px
-      font-family: '500'
-      line-height: 24px
-      color: #4B83C6
-      & + p
-        margin-top: 15px
-
-.request
-  background: #EFF6FD
-  &__inner
-    padding: 170px 0
-    display: flex
-    justify-content: space-between
-    align-items: flex-start
-    div
-      &:first-child
-        width: 29%
-        color: #39679D
-      &:last-child
-        width: 30%
-        color: #4B83C6
-        font-size: 17px
-        line-height: 24px
-        font-family: '500'
-        .button
-          margin-top: 50px
-    img
-      width: 32%
-      margin-right: 2%
-      object-fit: contain
 
 .news
   &__inner
@@ -417,6 +413,10 @@
         margin-left: 14px
     &>div
       margin-top: 20px
+  &__mobile-date
+    display: none
+  &__mobile-share
+    display: none
   &__info
     margin-left: 100px
     max-width: 700px
@@ -483,6 +483,7 @@
       font-size: 16px
       font-family: '500'
       line-height: 18px
+
 @media (max-width: 767px)
   .main
     height: calc(100vh - 65px)
@@ -497,50 +498,31 @@
         width: 145px
         margin-top: 10px
 
-  .second-section
+  .goals
     &__inner
-      flex-direction: column
-      padding: 80px 0
+      padding-top: 80px
+      padding-bottom: 80px
+      flex-wrap: wrap
+    &__button
       img
         display: none
-      .text-1
-        font-size: 22px
-        width: 100%
-        line-height: 26px
-      .text-2
-        margin-top: 40px
-        font-size: 16px
-        width: 100%
-        line-height: 20px
-
-  .statistics
-    &__inner
-      padding: 80px 0
-    &__header
-      flex-direction: column
-      align-items: flex-start
-      border-bottom: none
-      padding-bottom: 0
+    &__descr
+      margin-bottom: 0
       .title
         font-size: 22px
+        line-height: 26px
       .subtitle
-        margin-top: 20px
-        margin-left: 0
-        font-size: 16px
-    &__cards
-      margin-top: 50px
-    &__card
-      width: 100%
-      margin-bottom: 30px
-      padding: 40px 24px
-      div
-        &:first-child
-          font-size: 40px
-        &:nth-child(2)
-          font-size: 16px
-          margin-top: 5px
-        &:last-child
-          font-size: 15px
+        display: none
+      .mobile
+        display: block
+        margin-top: 40px
+        margin-bottom: 40px
+        img
+          width: 100%
+    &__button
+      margin-top: 0
+    &__content
+      display: none
 
   .programs
     &__inner
@@ -563,29 +545,38 @@
           text-transform: capitalize !important
           font-size: 23px !important
 
-  .slider
-    display: none
-
-  .quote
+  .wish
     &__inner
-      padding: 80px 0
-      flex-direction: column
-    &__text
-      margin-top: 20px
+      padding-top: 80px
+    &__content
+      .title
+        color: #00424C
+        font-size: 22px
+        line-height: 26px
+        .link
+          margin-top: 15px
+      .button
+        width: 100% !important
+        justify-content: center
+        height: 60px
+        margin-top: 50px !important
 
-  .request
+  .letter
     &__inner
-      padding: 80px 0
-      flex-direction: column
-      div
-        &:first-child
-          width: 100%
-          text-transform: capitalize
-        &:last-child
-          width: 100%
-      img
-        width: 100%
-        margin: 75px 0
+      padding-top: 80px
+      padding-bottom: 80px
+      .title
+        font-size: 22px
+        line-height: 26px
+        padding-left: 5px
+        padding-right: 5px
+      .subtitle
+        margin-top: 140px
+    &__title
+      font-size: 40px
+      line-height: 40px
+    &__button
+      margin-top: 120px
 
   .news
     &__inner
@@ -609,36 +600,99 @@
     &__items
       max-height: 500px
 
-@media (min-width: 768px) and (max-width: 992px)
-  .second-section
-    &__inner
-      flex-direction: column
-      padding: 120px 0
-      div
-        &:first-child
-          width: 100%
-        &:last-child
-          width: 100%
-      img
-        width: 70%
-        margin: 70px 15%
+  .news
+    &__header2
+      font-size: 16px
+      font-family: '500'
+      color: #161616 !important
+      opacity: 1
+    &__content2
+      flex-wrap: wrap
+    &__boxs
+      justify-content: space-between
+      margin-top: 40px
+    &__box
+      width: 48% !important
+      margin-right: 0 !important
+      margin-bottom: 40px
+      &-img
+        img
+          border-radius: 4px
+          overflow: hidden
+      &-content
+        flex-direction: column !important
+      &-hashtag
+        min-height: 44px
+      &-title
+        margin-top: 15px !important
 
-  .statistics
+  .news-in
     &__inner
-      padding: 120px 0
+      padding-top: 30px
+      padding-bottom: 80px
+    &__main-img
+      img
+        border-radius: 4px
+        height: 200px
+        object-fit: cover
+        object-position: center
+    &__content
+      margin-top: 20px
+    &__sidebar
+      display: none
+    &__info
+      margin-left: 0
+    &__title
+      font-size: 18px
+      line-height: 21px
+      max-width: 270px
+    &__mobile-date
+      display: block
+      color: #6F6F6F
+      font-size: 14px
+      font-family: '500'
+      margin-bottom: 20px
+    &__mobile-share
+      display: block
+      margin-top: 30px
+      span
+        color: #6F6F6F
+        font-size: 14px
+        font-family: '500'
+      div
+        margin-top: 10px
+        a
+          & + a
+            margin-left: 20px
+    &__img
+      img
+        height: 200px
+        object-fit: cover
+        object-position: center
+
+  .featured-news
+    &__inner
+      padding-bottom: 40px
     &__header
-      flex-direction: column
+      .title
+        font-size: 18px
       .link
-        margin-top: 30px
+        font-size: 14px
     &__cards
+      margin-top: 30px
+      flex-wrap: wrap
+      justify-content: space-between
     &__card
       width: 48%
-      margin-bottom: 4%
-      padding: 35px
-      div
-        &:first-child
-          font-size: 48px
+      margin-bottom: 40px
+      &-img
+        img
+          height: 130px
+          object-fit: cover
+          object-position: center
+          border-radius: 4px
 
+@media (min-width: 768px) and (max-width: 992px)
   .programs
     &__inner
       padding: 120px 0
@@ -646,39 +700,6 @@
     &__card
       width: 48%
       margin-bottom: 4%
-
-  .quote
-    &__inner
-      padding: 120px 0
-      flex-direction: column
-      .title
-        max-width: 100%
-    &__wrap
-      max-width: 100%
-      img
-        margin-top: 40px
-        margin-bottom: 20px
-    &__text
-      margin-top: 20px
-
-  .request
-    &__inner
-      padding: 80px 0
-      flex-direction: column
-      div
-        &:first-child
-          width: 100%
-        &:last-child
-          width: 100%
-      img
-        width: 80%
-        margin: 30px 10%
-      span
-        display: block
-      .button
-        width: 80%
-        margin-left: 10%
-        margin-right: 10%
 
   .news
     &__header
@@ -699,36 +720,6 @@
     &__title
       width: 800px
 
-  .second-section
-    &__inner
-      flex-direction: column
-      padding: 120px 0
-      div
-        &:first-child
-          width: 100%
-        &:last-child
-          width: 100%
-      img
-        width: 70%
-        margin: 70px 15%
-
-  .statistics
-    &__inner
-      padding: 120px 0
-    &__header
-      flex-direction: column
-      justify-content: flex-start
-      .link
-        margin-top: 30px
-    &__cards
-    &__card
-      width: 48%
-      margin-bottom: 4%
-      padding: 35px
-      div
-        &:first-child
-          font-size: 48px
-
   .programs
     &__inner
       padding: 120px 0
@@ -736,22 +727,3 @@
     &__card
       width: 48%
       margin-bottom: 4%
-
-  .request
-    &__inner
-      padding: 80px 0
-      flex-direction: column
-      div
-        &:first-child
-          width: 100%
-        &:last-child
-          width: 100%
-      img
-        width: 80%
-        margin: 30px 10%
-      span
-        display: block
-      .button
-        width: 80%
-        margin-left: 10%
-        margin-right: 10%
