@@ -484,9 +484,69 @@
       font-family: '500'
       line-height: 18px
 
+.second-slider
+  background: #FFFDEA
+  padding: 100px 0
+  &__slide
+    display: flex
+    justify-content: space-between
+    width: 100%
+    &>img
+      width: calc( 50% - 100px )
+      height: 580px
+      object-fit: cover
+      object-position: center
+      border-radius: 10px
+    &>div
+      width: calc( 50% - 50px )
+      margin-right: 50px
+      margin-top: 30px
+  &__text
+    p
+      color: #695F12
+      font-size: 32px
+      font-family: '600'
+      line-height: 35px
+      margin-bottom: 0
+      & + p
+        margin-top: 20px
+  &__initials
+    margin-top: 40px
+    display: flex
+    align-items: flex-end
+    img
+      width: 130px
+      object-fit: contain
+      margin-left: 28px
+    span
+      color: #373209
+      font-size: 20px
+      font-family: '500'
+      line-height: 24px
+
 @media (max-width: 767px)
   .main
-    height: calc(100vh - 65px)
+    min-height: 100vh
+    &__inner
+      padding-top: 50px
+      padding-bottom: 80px
+      flex-wrap: wrap
+    &__header
+      border-bottom: none
+      padding-bottom: 0
+      margin-right: 0
+      margin-bottom: 20px
+      .title
+        color: #00424C
+        font-size: 22px
+      .link
+        display: none
+    &__slider
+      img
+        height: 540px
+        object-fit: contain
+    &__news
+      margin-top: 50px
     &__title
       font-size: 33px
       line-height: 46px
@@ -544,6 +604,30 @@
           color: #39679D !important
           text-transform: capitalize !important
           font-size: 23px !important
+      &:nth-last-child(2)
+        background-color: #5CC8D7
+        background-image: url('../img/programs-pred-last-bfg.png')
+        background-repeat: no-repeat
+        background-position: left bottom
+        background-size: 65%
+        height: 330px
+        *
+          color: white !important
+      &:last-child
+        background-color: #FFFDEA
+        background-image: url('../img/programs-last-bg.png')
+        background-repeat: no-repeat
+        background-position: center bottom
+        background-size: 100% 93px
+        min-height: 330px
+        .form
+          span
+            color: #161616 !important
+            font-family: '600'
+            font-size: 22px
+            line-height: 26px
+          .button
+            margin-top: 20px
 
   .wish
     &__inner
@@ -691,6 +775,23 @@
           object-fit: cover
           object-position: center
           border-radius: 4px
+
+  .second-slider
+    &__slide
+      flex-wrap: wrap
+      &>img
+        width: 100%
+        height: 250px
+      &>div
+        margin-right: 0
+        width: 100%
+    &__text
+      p
+        font-size: 22px
+        color: #161616
+        line-height: 24px
+    &__initials
+      display: none
 
 @media (min-width: 768px) and (max-width: 992px)
   .programs
