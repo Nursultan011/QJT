@@ -1,0 +1,90 @@
+.upload
+  &__inner
+    padding-top: 100px
+    padding-bottom: 110px
+    .title
+      font-size: 32px
+      line-height: 35px
+  &__banner
+    margin-top: 40px
+    background: #FFFAD5
+    border-radius: 10px
+    width: 100%
+    display: flex
+    align-items: center
+    height: 276px
+    overflow: hidden
+    &>div
+      &:first-child
+        width: 472px
+        padding: 50px 75px 50px 50px
+      &:last-child
+        padding-left: 25px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 100%
+        width: calc(100% - 472px)
+        background: linear-gradient(270deg, #FFF182 0%, rgba(255, 250, 213, 0) 90%)
+        p
+          color: #695F12
+          font-size: 18px
+          font-family: '500'
+          line-height: 22px
+          width: 377px
+        img
+          width: 400px
+          height: 100%
+          object-fit: cover
+          object-position: bottom
+
+    .input
+      width: 100%
+  &__button
+    width: 100%
+    margin-top: 30px
+    background: #EBE4B1
+    border-radius: 4px
+    border: none
+    color: #695F12
+    font-size: 16px
+    font-family: '500'
+    height: 52px
+  &__videos
+    margin-top: 80px
+
+@media (max-width: 767px)
+  .upload
+    &__inner
+      padding-top: 80px
+      padding-bottom: 80px
+      .title
+        font-size: 22px
+        line-height: 26px
+        padding-right: 10px
+    &__banner
+      margin-top: 48px
+      flex-wrap: wrap
+      height: auto
+      background: linear-gradient(180deg, rgba(255, 241, 130, 0) 0%, #FFF182 100%), #FFFAD5
+      padding: 60px 14px 0 14px
+      div
+        width: 100% !important
+        background: transparent !important
+        flex-wrap: wrap
+        &:first-child
+          padding: 0
+        &:last-child
+          padding: 0
+          margin-top: 60px
+          p
+            width: 100%
+            font-size: 16px
+            line-height: 21px
+          img
+            margin-top: 24px
+            width: calc(100% + 28px)
+            margin-left: -14px
+            margin-right: -14px
+    &__button
+      margin-top: 30px
