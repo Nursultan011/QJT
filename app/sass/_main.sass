@@ -31,12 +31,46 @@
     max-width: 770px
     .main__header
       margin-right: 15px
-    &-content
-      img
+    &-desktop
+      background: #FFFFFF
+      border-radius: 5px
+      overflow: hidden
+      height: 700px
+      &>img
+        height: 423px
         width: 100%
-        height: 700px
         object-fit: cover
         object-position: center
+      &>div
+        padding: 20px 40px
+        height: calc(100% - 423px)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .title
+          font-size: 26px
+          line-height: 31px
+          color: #161616
+        .subtitle
+          color: #7E7E7E
+          font-size: 18px
+          line-height: 21px
+        .initials
+          margin-top: 20px
+          display: flex
+          align-items: center
+          p
+            margin-bottom: 0
+            font-size: 18px
+            font-family: '500'
+            line-height: 21px
+            width: 100%
+            max-width: 161px
+          img
+            width: 100px
+            object-fit: contain
+            margin-left: 15px
+
   &__news
     width: 100%
     max-width: 475px
@@ -45,6 +79,7 @@
       border-radius: 5px
       width: 100%
       max-height: 700px
+      height: 700px
       overflow: hidden
 
 .goals
@@ -310,7 +345,7 @@
       -webkit-box-orient: vertical
   &__scrollNews
     width: 570px
-    max-height: 660px
+    max-height: 700px
     background: #F9F9F9
     border-radius: 5px
     padding: 35px 25px 35px 35px
@@ -507,6 +542,9 @@
       width: calc( 50% - 50px )
       margin-right: 50px
       margin-top: 30px
+      display: flex
+      flex-direction: column
+      justify-content: center
   &__text
     p
       color: #695F12
@@ -548,9 +586,32 @@
       .link
         display: none
     &__slider
-      img
-        height: 540px
-        object-fit: contain
+      &-desktop
+        height: 585px
+        &>img
+          height: 300px
+          object-fit: cover
+          object-position: center
+        &>div
+          height: calc(100% - 300px)
+          padding: 24px 20px 20px 20px
+          .title
+            display: none
+          .subtitle
+            margin-top: 0
+            font-size: 14px
+            line-height: 16px
+          .initials
+            margin-top: 10px
+            flex-direction: column
+            align-items: flex-start
+            p
+              font-size: 16px
+              line-height: 20px
+            img
+              margin-top: -10px
+              width: 66px
+              object-position: left
     &__news
       margin-top: 50px
     &__title
